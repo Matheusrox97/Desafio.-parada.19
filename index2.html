@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página das cores</title> <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Escolha uma cor</h2>
+<input type="text" id="colorInput" placeholder="Digite em inglês">
+<button id="submitBtn">Clique aqui</button>
+<script>
+document.getElementById("submitBtn").addEventListener("click", function() {
+    var color = document.getElementById("colorInput").value;
+    document.body.style.backgroundColor = color;
+});
+</script>
+</body>
+</html>
